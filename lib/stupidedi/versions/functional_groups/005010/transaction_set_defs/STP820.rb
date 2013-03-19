@@ -28,7 +28,7 @@ module Stupidedi
                 d::LoopDef.build("ENT/RMR", d::RepeatCount.unbounded,
                   s::RMR.use(1500, r::Mandatory,  d::RepeatCount.bounded(1)),
                   s::REF .use(1700, r::Optional,  d::RepeatCount.bounded(1)),
-                  s::DTM .use(1800, r::Optional,  d::RepeatCount.bounded(1))),
+                  s::DTM .use(1800, r::Optional,  d::RepeatCount.bounded(1)),
 
                   d::LoopDef.build("ENT/RMR/ADX", d::RepeatCount.bounded(1),
                     s::ADX.use(2100, r::Optional,  d::RepeatCount.bounded(1)))
