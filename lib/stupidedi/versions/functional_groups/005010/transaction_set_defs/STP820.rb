@@ -33,7 +33,7 @@ module Stupidedi
                   d::LoopDef.build("ENT/RMR/ADX", d::RepeatCount.bounded(1),
                     s::ADX.use(2100, r::Optional,  d::RepeatCount.bounded(1)))
 
-            )),
+            ))),
 
             d::TableDef.summary("Table 3 - Summary",
               s:: SE.use( 100, r::Mandatory, d::RepeatCount.bounded(1)))
